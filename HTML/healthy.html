@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Blog - How to Eat Healthier</title>
+    <link rel="stylesheet" href="../CSS/subblogstyle.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kalam"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Syncopate"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Salsa"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merienda"
+      rel="stylesheet" />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileNavIcon = document.querySelector(".mobile-nav-icon");
+        const mainNav = document.querySelector(".main-nav");
+        const mobileNavDropdown = document.querySelector(
+          ".mobile-nav-dropdown"
+        );
+
+        mobileNavIcon.addEventListener("click", function () {
+          mainNav.classList.toggle("active");
+          mobileNavDropdown.classList.toggle("active");
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="../Images/logo.png"
+          alt="Food Blog Logo"
+          style="max-width: 100%" />
+      </div>
+      <hr class="hr1" />
+      <div class="mobile-nav-icon">&#9776;</div>
+      <ul class="main-nav">
+        <li><a href="../HTML/main.html">HOME</a></li>
+        <li class="active"><a href="../HTML/blogs.html">BLOGS</a></li>
+        <li><a href="../HTML/recipes.html">RECIPES</a></li>
+        <li><a href="../HTML/reviews.html">REVIEWS</a></li>
+        <li><a href="../HTML/about.html">ABOUT US</a></li>
+      </ul>
+      <hr class="hr1" />
+    </header>
+
+    <div class="blog-container">
+      <div class="blog-header">
+        <img
+          src="../Images/healthyeating.jpg"
+          alt="How to Eat Healthier"
+          class="blog-image" />
+        <h1>How to Eat Healthier</h1>
+      </div>
+      <div class="blog-content">
+        <div class="description">
+          <p>
+            We have all heard that it’s best to eat a healthy diet. And we all
+            likely know about some of the benefits of a diet that is rich in
+            fruits, vegetables, and other nutrient-rich foods. But do you know
+            what healthy eating really means? According to the UK website for
+            the NHS, healthy eating means that you eat a large variety of
+            different foods in the correct proportion. It means that you consume
+            the right amount of food and beverages to achieve, and continue to
+            maintain, a healthy weight.
+          </p>
+          <p>
+            A healthy diet plan should provide you with the right amount of
+            calories for energy to maintain a proper balance. When you have a
+            good energy balance with your diet, the calories in the food you
+            consume are equal to the calories used by your body that day. This
+            means that you eat enough food to keep you sustained, but not so
+            much that it causes you to gain weight. Because no two people use
+            the same amount of energy each day, it can be difficult to make a
+            single suggestion for the right caloric intake that would work for
+            everyone. Therefore, finding out the how many calories you burn per
+            day based on how active your are would be very helpful when planing
+            a healthy diet plan.
+          </p>
+          <p>
+            Not all healthy substitutes are created equal. A vegetarian diet,
+            for example, may be great for some individuals. But the foods cater
+            to vegetarians are not always the best options for you. Many
+            processed vegetarian meat substitutes made with soy products and/or
+            large amount of sodium are not good for your health. If you are only
+            switching to a vegetarian diet for health reasons, keep the same
+            mindset. Only eating fresh foods instead of packaged and processed
+            foods.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>

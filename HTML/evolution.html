@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Blog - Evolution Of Food</title>
+    <link rel="stylesheet" href="../CSS/subblogstyle.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kalam"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Syncopate"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Salsa"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merienda"
+      rel="stylesheet" />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileNavIcon = document.querySelector(".mobile-nav-icon");
+        const mainNav = document.querySelector(".main-nav");
+        const mobileNavDropdown = document.querySelector(
+          ".mobile-nav-dropdown"
+        );
+
+        mobileNavIcon.addEventListener("click", function () {
+          mainNav.classList.toggle("active");
+          mobileNavDropdown.classList.toggle("active");
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="../Images/logo.png"
+          alt="Food Blog Logo"
+          style="max-width: 100%" />
+      </div>
+      <hr class="hr1" />
+      <div class="mobile-nav-icon">&#9776;</div>
+      <ul class="main-nav">
+        <li><a href="../HTML/main.html">HOME</a></li>
+        <li class="active"><a href="../HTML/blogs.html">BLOGS</a></li>
+        <li><a href="../HTML/recipes.html">RECIPES</a></li>
+        <li><a href="../HTML/reviews.html">REVIEWS</a></li>
+        <li><a href="../HTML/about.html">ABOUT US</a></li>
+      </ul>
+      <hr class="hr1" />
+    </header>
+
+    <div class="blog-container">
+      <div class="blog-header">
+        <img
+          src="../Images/evo.png"
+          alt="Evolution Of Food Image"
+          class="blog-image" />
+        <h1>The Evolution Of Food</h1>
+      </div>
+      <div class="blog-content">
+        <div class="description">
+          <p>
+            You wake up hungry. You go to the fridge and make yourself a massive
+            plate of eggs & hashbrowns. Or maybe today you’re feeling a greek
+            yogurt bowl with granola & fruit. But no, what about that slice of
+            pizza you didn’t finish last night? Is that against breakfast law?
+            What if you woke up and it was 1000 BC? I don’t think your
+            prehistoric fridge will have any dinosaur eggs. And I imagine the
+            Greeks were busy getting ready for their first Olympics rather than
+            formulating their yogurt recipe we’ve all come to love. Food has
+            undergone one of the greatest evolutions of resources since the
+            first humans walked the Earth, not only in form & usage but also in
+            symbolism. The evolution of food is one of the greatest indicators
+            of the sheer achievement humans have experienced since our
+            inception, and we are only at the beginning of it.
+          </p>
+          <p>
+            This one is probably the most obvious. For thousands of years, we
+            were hunters & gatherers. We ate raw meat and chewed on tree bark
+            (yes we did). Today, we still eat raw meat (ask our CFO about his
+            choice of steak tartare) yet in much different circumstances. We eat
+            well-processed foods that have dramatically less bacteria and much
+            more oversight before they land on our dinner plates. We have
+            evolved from raw meat eaters, to stew makers, to farmers, and
+            finally where we are today. Periods of time are marked by our food.
+            We don’t drink mead and eat solely potatoes too often anymore, but
+            if you grew up in the Medieval era or in Ireland hundreds of years
+            ago, you probably did. The evolution of food in its physical form is
+            most clear in the fact that our appendix is no longer a necessary
+            organ! Our appendix is well-regarded to have helped in our digestion
+            when we were eating, yes you guessed it, raw meat and tree bark.
+            However, with a more refined diet, humans have lost the necessity
+            for it. In fact, many get it removed due to ruptures.
+          </p>
+          <p>
+            We went from hunting animals and eating them fresh, to scrolling on
+            our phones for the best philly cheesesteak near us. One day, we
+            should put a slab of moose down next to an Omakase dinner to really
+            see the evolution of food in its most obvious light. Advancement in
+            technology and more structured systems for manufacturing food have
+            allowed for food to take on entirely new forms.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>

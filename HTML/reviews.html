@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Blog - Reviews</title>
+    <link rel="stylesheet" href="../CSS/reviewsstyle.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kalam"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Syncopate"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Salsa"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merienda"
+      rel="stylesheet" />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileNavIcon = document.querySelector(".mobile-nav-icon");
+        const mainNav = document.querySelector(".main-nav");
+        const mobileNavDropdown = document.querySelector(
+          ".mobile-nav-dropdown"
+        );
+
+        mobileNavIcon.addEventListener("click", function () {
+          mainNav.classList.toggle("active");
+          mobileNavDropdown.classList.toggle("active");
+        });
+      });
+
+      function openReviewDetails(reviewId) {
+        var modal = document.getElementById(reviewId);
+        modal.style.display = "block";
+      }
+
+      function closeReviewDetails(reviewId) {
+        var modal = document.getElementById(reviewId);
+        modal.style.display = "none";
+      }
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="../Images/logo.png"
+          alt="Food Blog Logo"
+          style="max-width: 100%" />
+      </div>
+      <hr class="hr1" />
+      <div class="mobile-nav-icon">&#9776;</div>
+      <ul class="main-nav">
+        <li><a href="../HTML/main.html">HOME</a></li>
+        <li><a href="../HTML/blogs.html">BLOGS</a></li>
+        <li><a href="../HTML/recipes.html">RECIPIES</a></li>
+        <li class="active"><a href="../HTML/reviews.html">REVIEWS</a></li>
+        <li><a href="../HTML/about.html">ABOUT US</a></li>
+      </ul>
+      <hr class="hr1" />
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search reviews..." />
+        <button><i class="fa fa-search"></i></button>
+      </div>
+    </header>
+
+    <div class="reviews-container">
+      <div class="review-card" onclick="openReviewDetails('review1-details')">
+        <div class="review-details-left">
+          <h2>Seasonal Tastes</h2>
+          <p class="cusine">Indian, Asian, Vegetarian Friendly</p>
+          <p class="rating">Rating: 4/5</p>
+          <div class="short-description">
+            <p>
+              Seasonal Tastes ensure to serve authentic cuisines to our diners
+              by a larger than life buffet spread or a la carte specials.
+            </p>
+          </div>
+        </div>
+        <div class="review-details-right">
+          <img
+            src="../Images/seasons.jpg"
+            alt="The Seasonal Tastes Image"
+            class="review-image" />
+        </div>
+      </div>
+
+      <div class="review-card" onclick="openReviewDetails('review2-details')">
+        <div class="review-details-left">
+          <h2>The Reef</h2>
+          <p class="cusine">Indian, International, Asian</p>
+          <p class="rating">Rating: 4.5/5</p>
+          <div class="short-description">
+            <p>
+              Dine on freshly prepared international cuisine at while you take
+              in stunning views of the beach and the Bay of Bengal.
+            </p>
+          </div>
+        </div>
+        <div class="review-details-right">
+          <img
+            src="../Images/the-reef-all-day-dining.jpg"
+            alt="The Reef Image"
+            class="review-image" />
+        </div>
+      </div>
+      <div class="review-card" onclick="openReviewDetails('review3-details')">
+        <div class="review-details-left">
+          <h2>The Flying Elephant</h2>
+          <p class="cusine">Italian, Indian</p>
+          <p class="rating">Rating: 5/5</p>
+          <div class="short-description">
+            <p>
+              The Flying Elephant is a multifaceted sensory exploration of
+              recipes that go beyond culinary limits.
+            </p>
+          </div>
+        </div>
+        <div class="review-details-right">
+          <img
+            src="../Images/the-flying-elephant.jpg"
+            alt="The Flying Elephant Image"
+            class="review-image" />
+        </div>
+      </div>
+      <div class="review-card" onclick="openReviewDetails('review4-details')">
+        <div class="review-details-left">
+          <h2>C Salt</h2>
+          <p class="cusine">Italian, Indian</p>
+          <p class="rating">Rating: 5/5</p>
+          <div class="short-description">
+            <p>
+              Aesthetically designed with breathtaking sea views, this outdoor
+              restaurant features fresh-caught seafood and the coastal cuisine
+              of Southern India.
+            </p>
+          </div>
+        </div>
+        <div class="review-details-right">
+          <img
+            src="../Images/csaltm.jpg"
+            alt="The C Salt"
+            class="review-image" />
+        </div>
+      </div>
+    </div>
+
+    <div class="review-details" id="review1-details">
+      <span class="close-btn" onclick="closeReviewDetails('review1-details')"
+        >&times;</span
+      >
+      <h2>Seasonal Tastes Review</h2>
+      <p class="rating">Rating: 4/5</p>
+      <p class="cuisine">Cuisine:Indian, Asian, Vegetarian Friendly</p>
+      <p class="price">Price: Rs.1000 to Rs.1500</p>
+      <p class="address">Address: 154 Velachery Main Road, Chennai</p>
+      <div class="long-description">
+        <p>
+          Seasonal Tastes offers an amazing variety of food! They have live
+          stations with delicious options like sushi, dim sum, gazpacho,
+          noodles, pastas, roesti, and cold stone ice cream. You can also enjoy
+          vibrant salads, tasty cold cuts, a diverse main course buffet with
+          dishes from different cuisines, and a delightful dessert buffet. It's
+          a fantastic and diverse dining experience for everyone.
+        </p>
+      </div>
+      <div class="image-row">
+        <img src="../Images/Sushi-1-1.jpg" alt="Caption 1" class="image" />
+        <img src="../Images/DBuffet.jpg" alt="Caption 2" class="image" />
+        <img src="../Images/noodles.jpg" alt="Caption 3" class="image" />
+      </div>
+    </div>
+
+    <div class="review-details" id="review2-details">
+      <span class="close-btn" onclick="closeReviewDetails('review2-details')"
+        >&times;</span
+      >
+      <h2>The Reef Review</h2>
+      <p class="rating">Rating: 4.5/5</p>
+      <p class="cuisine">Cuisine:Indian, Asian, International</p>
+      <p class="price">Price: Rs.500 to Rs.1500</p>
+      <p class="address">
+        Address: 280 ECR, Vadanamelli Sheraton Grand Chennai Resort & Spa,
+        Chennai
+      </p>
+      <div class="long-description">
+        <p>
+          From the aromatic biryani to the rich tapestry of Chinese delights,
+          from specialties fresh from the sea to the comforting simplicity of
+          dal chawal, it's a culinary adventure all under one roof. Take a
+          moment to explore, indulge your taste buds in a delightful array, and
+          relish the diverse offerings. The food is truly finger-licking good.
+          The ambiance is exquisite, and the service is top-notch. The staff's
+          courtesy and friendliness enhance the overall dining experience,
+          making each bite more enjoyable.
+        </p>
+      </div>
+      <div class="image-row">
+        <img src="../Images/biryani.jpg" alt="Caption 1" class="image" />
+        <img src="../Images/daal.jpg" alt="Caption 2" class="image" />
+        <img src="../Images/Restaurant.jpg" alt="Caption 3" class="image" />
+      </div>
+    </div>
+    <div class="review-details" id="review3-details">
+      <span class="close-btn" onclick="closeReviewDetails('review3-details')"
+        >&times;</span
+      >
+      <h2>The Flying Elephant Review</h2>
+      <p class="rating">Rating: 4/5</p>
+      <p class="cuisine">Cuisine:Asian, Italian, Indian, International</p>
+      <p class="price">Price: Rs.2000 to Rs.2500</p>
+      <p class="address">
+        Address: No 39 Velachery Main Road, Near Raj Bhavan, Chennai
+      </p>
+      <div class="long-description">
+        <p>
+          The Flying Elephant is a multifaceted sensory exploration of recipes
+          that go beyond culinary limits. An elevated adventure that pushes
+          geographical and gastronomical boundaries and picks them apart with
+          gusto. At the centre of this experience is a menu that brings together
+          ideas, ingredients and techniques from across the world, leaving you
+          enchanted, transformed and uplifted all at once.It's 'fun dining'
+          designed and delivered by a team of professionals with an eye for
+          detail and a penchant for discovering.
+        </p>
+      </div>
+      <div class="image-row">
+        <img src="../Images/italian.jpg" alt="Caption 1" class="image" />
+        <img src="../Images/mag.jpg" alt="Caption 2" class="image" />
+        <img src="../Images/music.jpg" alt="Caption 3" class="image" />
+      </div>
+    </div>
+    <div class="review-details" id="review4-details">
+      <span class="close-btn" onclick="closeReviewDetails('review4-details')"
+        >&times;</span
+      >
+      <h2>C Salt Review</h2>
+      <p class="rating">Rating: 4.5/5</p>
+      <p class="cuisine">Cuisine:Indian, Seafood, Asian, Healthy</p>
+      <p class="price">Price: Rs.1500 to Rs.3000</p>
+      <p class="address">Address: 280, East Coast Rd, Chennai</p>
+      <div class="long-description">
+        <p>
+          C Salt has a rustic and pleasant ambience with comfortable seating and
+          captivating music that elevates the overall dining experience. The
+          specially curated ‘sea to plate’ fresh seafood menu reflects the
+          personal notes on what comes out of the coastal belt of Southern
+          India, with a focus on locally sourced ingredients and flavours. This
+          theme flows across the menu
+        </p>
+      </div>
+      <div class="image-row">
+        <img src="../Images/indian.jpg" alt="Caption 1" class="image" />
+        <img src="../Images/seafood.jpg" alt="Caption 2" class="image" />
+        <img src="../Images/rustic.jpg" alt="Caption 3" class="image" />
+      </div>
+    </div>
+    <footer>
+      <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Blog - Caesar Salad</title>
+    <link rel="stylesheet" href="../CSS/subrecipestyle.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kalam"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Syncopate"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Salsa"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merienda"
+      rel="stylesheet" />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileNavIcon = document.querySelector(".mobile-nav-icon");
+        const mainNav = document.querySelector(".main-nav");
+        const mobileNavDropdown = document.querySelector(
+          ".mobile-nav-dropdown"
+        );
+
+        mobileNavIcon.addEventListener("click", function () {
+          mainNav.classList.toggle("active");
+          mobileNavDropdown.classList.toggle("active");
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="../Images/logo.png"
+          alt="Food Blog Logo"
+          style="max-width: 100%" />
+      </div>
+      <hr class="hr1" />
+      <div class="mobile-nav-icon">&#9776;</div>
+      <ul class="main-nav">
+        <li><a href="../HTML/main.html">HOME</a></li>
+        <li><a href="../HTML/blogs.html">BLOGS</a></li>
+        <li class="active"><a href="../HTML/recipes.html">RECIPES</a></li>
+        <li><a href="../HTML/reviews.html">REVIEWS</a></li>
+        <li><a href="../HTML/about.html">ABOUT US</a></li>
+      </ul>
+      <hr class="hr1" />
+    </header>
+
+    <div class="detailed-review-container">
+      <div class="leftcolumn">
+        <img
+          src="../Images/CeaserSalad.jpeg"
+          alt="Caesar Salad Image"
+          class="detailed-image" />
+      </div>
+      <div class="rightcolumn">
+        <h2>Caesar Salad</h2>
+        <p class="cuisine">Cuisine: Italian</p>
+        <p class="description">
+          A Caesar salad is a green salad of romaine lettuce and croutons
+          dressed with lemon juice, olive oil, egg, Worcestershire sauce,
+          anchovies, garlic, Dijon mustard, Parmesan cheese, and black pepper.
+          In its original form, this salad was prepared and served tableside.
+        </p>
+        <h3 class="ingredients">Ingredients</h3>
+        <ul class="ingredients-list">
+          <li>6 anchovy fillets packed in oil, drained</li>
+          <li>1 small garlic clove</li>
+          <li>Kosher salt</li>
+          <li>2 large egg yolks</li>
+          <li>2 Tbsp. fresh lemon juice, plus more</li>
+          <li>¾ tsp. Dijon mustard</li>
+          <li>2 Tbsp. extra-virgin olive oil</li>
+          <li>½ cup vegetable oil</li>
+          <li>3 Tbsp. finely grated Parmesan</li>
+          <li>Freshly ground black pepper</li>
+        </ul>
+        <h3 class="instructions">Instructions:</h3>
+        <p>
+          In a medium bowl, whisk together the garlic, anchovy paste, lemon
+          juice, Dijon mustard and Worcestershire sauce. Add the mayonnaise,
+          Parmigiano-Reggiano, salt and pepper and whisk until well combined.
+          Taste and adjust to your liking. The dressing will keep well in the
+          fridge for about a week.
+        </p>
+        <p>
+          To serve, toss lettuce with a few tablespoons of dressing, adding more
+          if desired. Once lettuce is coated, add half of remaining cheese and
+          three-quarters of croutons and toss again. Transfer to a salad bowl
+          and sprinkle with remaining cheese and croutons. Serve.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+      </div>
+    </footer>
+
+    <script>
+      function searchRecipes() {
+        console.log("Searching recipes...");
+      }
+    </script>
+  </body>
+</html>

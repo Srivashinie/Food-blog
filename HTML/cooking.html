@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Blog - Improve your cooking skills</title>
+    <link rel="stylesheet" href="../CSS/subblogstyle.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kalam"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Syncopate"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Salsa"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merienda"
+      rel="stylesheet" />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileNavIcon = document.querySelector(".mobile-nav-icon");
+        const mainNav = document.querySelector(".main-nav");
+        const mobileNavDropdown = document.querySelector(
+          ".mobile-nav-dropdown"
+        );
+
+        mobileNavIcon.addEventListener("click", function () {
+          mainNav.classList.toggle("active");
+          mobileNavDropdown.classList.toggle("active");
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="../Images/logo.png"
+          alt="Food Blog Logo"
+          style="max-width: 100%" />
+      </div>
+      <hr class="hr1" />
+      <div class="mobile-nav-icon">&#9776;</div>
+      <ul class="main-nav">
+        <li><a href="../HTML/main.html">HOME</a></li>
+        <li class="active"><a href="../HTML/blogs.html">BLOGS</a></li>
+        <li><a href="../HTML/recipes.html">RECIPES</a></li>
+        <li><a href="../HTML/reviews.html">REVIEWS</a></li>
+        <li><a href="../HTML/about.html">ABOUT US</a></li>
+      </ul>
+      <hr class="hr1" />
+    </header>
+
+    <div class="blog-container">
+      <div class="blog-header">
+        <img
+          src="../Images/cookbetter.webp"
+          alt="Evolution Of Food Image"
+          class="blog-image" />
+        <h1>How to improve your cooking skills</h1>
+      </div>
+      <div class="blog-content">
+        <div class="description">
+          <p>
+            It is important to first understand what the recipe is asking for.
+            Do you need to know how to bake? Do you need to prepare time to let
+            the ingredients marinate? Do you need a certain type of knife? If
+            you don’t understand the terms you are using then, the recipe may
+            seem more difficult than you think. You should be able to make
+            easier recipes before attempting to learn harder ones. If you wish
+            to learn how to bake a cake then you should have at least tried
+            making a simple pastry first!
+          </p>
+          <p>
+            Ingredients are possibly the most important part of cooking.
+            Selecting the best quality ingredients can make or break the recipe.
+            The best way to ensure that you are using the freshest ingredients
+            is to get them on the day that you need them. If you don’t have the
+            time to go to the supermarket everyday, refrigerating them can work
+            too as long as they are used within 24 hours. If you are going to
+            freeze the ingredients, using freezer bags to trap the freshness and
+            avoid burns is best. But of course, using fresh foods is still the
+            ideal choice compared to frozen ones.
+          </p>
+          <p>
+            Many people think that having a pan, a spatula, and a knife is
+            enough to get things going. For basic cooking, it might be, but it’s
+            not going to get you very far. You should consider getting
+            additional cooking tools and kitchen equipment to assist you further
+            and make your cooking experience as easy as possible. Every cooking
+            tool and equipment serves a specific purpose: cooking pans are used
+            for frying while cooking pots are used to make stews and soups; chef
+            knives are used for slicing while paring knives are used to peel and
+            carve. However, sometimes it is difficult to find good quality
+            equipment that is reasonably priced as well. One of the most
+            important tools for the kitchen is your knife. Ideally, you have a
+            set of kitchen knives to make your slicing and cutting chores faster
+            and easier. A wide variety of knives is preferred so you can have a
+            good selection to choose from depending on the task at hand.
+          </p>
+          <p>
+            Cooking can be an entertainer, a relaxer, a detox, a love language,
+            and much more depending on the chef. Regardless, it’s important to
+            make sure you are learning how to improve your cooking skills as you
+            progress as a chef so that no recipe is out of your reach!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FOOD WEBSITE</title>
+    <link href="../CSS/main.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kalam"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Syncopate"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Salsa"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merienda"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet" />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileNavIcon = document.querySelector(".mobile-nav-icon");
+        const mainNav = document.querySelector(".main-nav");
+        const mobileNavDropdown = document.querySelector(
+          ".mobile-nav-dropdown"
+        );
+
+        mobileNavIcon.addEventListener("click", function () {
+          mainNav.classList.toggle("active");
+          mobileNavDropdown.classList.toggle("active");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="../Images/logo.png" alt="Food Book Logo" />
+      </div>
+      <hr class="hr1" />
+      <div class="mobile-nav-icon">&#9776;</div>
+      <ul class="main-nav">
+        <li><a href="#">HOME</a></li>
+        <li><a href="../HTML/blogs.html">BLOGS</a></li>
+        <li><a href="../HTML/recipes.html">RECIPES</a></li>
+        <li><a href="../HTML/reviews.html">REVIEWS</a></li>
+        <li><a href="../HTML/about.html">ABOUT US</a></li>
+      </ul>
+      <hr class="hr1" />
+    </header>
+    <article>
+      <div class="row1">
+        <div class="leftcolumn">
+          <h1>Welcome to Food Book!!</h1>
+          <p>Indulge in Delicious Tales and Tastes!!</p>
+          <p>
+            At Food Book, we bring you a delectable blend of mouth-watering
+            recipes, insightful blogs, and honest reviews. Our passion for good
+            food is reflected in every page, inviting you to explore the world
+            of flavors, aromas, and stories that make each dish unique. Feel
+            free to explore, cook, and savor the delightful stories we have
+            prepared for you.
+          </p>
+        </div>
+      </div>
+    </article>
+    <div class="image-container">
+      <a href="../HTML/blogs.html" class="image-with-text">
+        <img src="../Images/main1.jpg" alt="Image 1" />
+        <span class="image-text">Blogs ></span>
+      </a>
+      <a href="../HTML/recipes.html" class="image-with-text">
+        <img src="../Images/main2.jpg" alt="Image 2" />
+        <span class="image-text">Recipes ></span>
+      </a>
+      <a href="../HTML/reviews.html" class="image-with-text">
+        <img src="../Images/main3.jpg" alt="Image 3" />
+        <span class="image-text">Reviews ></span>
+      </a>
+      <a href="../HTML/about.html" class="image-with-text">
+        <img src="../Images/main4.jpg" alt="Image 4" />
+        <span class="image-text">About us ></span>
+      </a>
+    </div>
+    <footer>
+      <div class="footer">
+        <p>Craving Conversation? We're Listening!</p>
+        <div class="social-icons">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

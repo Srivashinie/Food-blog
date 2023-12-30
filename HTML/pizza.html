@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Blog - Classic Cheese Pizza</title>
+    <link rel="stylesheet" href="../CSS/subrecipestyle.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kalam"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Syncopate"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Salsa"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merienda"
+      rel="stylesheet" />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileNavIcon = document.querySelector(".mobile-nav-icon");
+        const mainNav = document.querySelector(".main-nav");
+        const mobileNavDropdown = document.querySelector(
+          ".mobile-nav-dropdown"
+        );
+
+        mobileNavIcon.addEventListener("click", function () {
+          mainNav.classList.toggle("active");
+          mobileNavDropdown.classList.toggle("active");
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="../Images/logo.png"
+          alt="Food Blog Logo"
+          style="max-width: 100%" />
+      </div>
+      <hr class="hr1" />
+      <div class="mobile-nav-icon">&#9776;</div>
+      <ul class="main-nav">
+        <li><a href="../HTML/main.html">HOME</a></li>
+        <li><a href="../HTML/blogs.html">BLOGS</a></li>
+        <li class="active"><a href="../HTML/recipes.html">RECIPES</a></li>
+        <li><a href="../HTML/reviews.html">REVIEWS</a></li>
+        <li><a href="../HTML/about.html">ABOUT US</a></li>
+      </ul>
+      <hr class="hr1" />
+    </header>
+
+    <div class="detailed-review-container">
+      <div class="leftcolumn">
+        <img
+          src="../Images/cheesepizza.jpg"
+          alt="Classic Cheese Pizza Image"
+          class="detailed-image" />
+      </div>
+      <div class="rightcolumn">
+        <h2>Classic Cheese Pizza</h2>
+        <p class="cuisine">Cuisine: Italian</p>
+        <p class="description">
+          Sometimes all you want at the end of the day is a simple cheese pizza.
+          This recipe turns simple into sublime with the addition of an
+          exceptional pizza dough, low-moisture mozzarella cheese, and an easy
+          to make tomato sauce that hits all of the right sweet and savory notes
+          to marry all of the flavors in this pie. A simple garnish of fresh
+          herbs, and you've got perfection on a plate.
+        </p>
+        <h3 class="ingredients">Ingredients</h3>
+        <ul class="ingredients-list">
+          <li>1 1/4-oz. packet active dry yeast</li>
+          <li>1 1/2 c. warm water</li>
+          <li>4 c. all-purpose flour</li>
+          <li>2 1/4 tsp. kosher salt</li>
+          <li>2 tbsp. olive oil, divided, plus more for brushing</li>
+          <li>1 c. Homemade Pizza Sauce, divided</li>
+          <li>1 c. cubed fresh mozzarella cheese, divided</li>
+          <li>3 c. shredded low-moisture mozzarella cheese, divided</li>
+          <li>Fresh basil, to serve</li>
+        </ul>
+        <h3 class="instructions">Instructions:</h3>
+        <p>
+          In the initial pizza dough preparation, yeast, sugar, and warm water
+          are combined, forming a dough mixed with flour, olive oil, and salt.
+          After rising for 1.5 hours, the dough is divided, shaped into rounds,
+          and left to rise. Preheat the oven with a pizza stone. Shape each
+          dough round, transfer to a foil-covered sheet, and assemble with
+          parmesan, pizza sauce, and mozzarella. Bake on the preheated stone,
+          then brush with olive oil and top with basil leaves. Repeat for the
+          remaining dough, emphasizing assembling just before baking for
+          freshness.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Blog - Mashed Potatoes</title>
+    <link rel="stylesheet" href="../CSS/subrecipestyle.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kalam"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Syncopate"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Salsa"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merienda"
+      rel="stylesheet" />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileNavIcon = document.querySelector(".mobile-nav-icon");
+        const mainNav = document.querySelector(".main-nav");
+        const mobileNavDropdown = document.querySelector(
+          ".mobile-nav-dropdown"
+        );
+
+        mobileNavIcon.addEventListener("click", function () {
+          mainNav.classList.toggle("active");
+          mobileNavDropdown.classList.toggle("active");
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="../Images/logo.png"
+          alt="Food Blog Logo"
+          style="max-width: 100%" />
+      </div>
+      <hr class="hr1" />
+      <div class="mobile-nav-icon">&#9776;</div>
+      <ul class="main-nav">
+        <li><a href="../HTML/main.html">HOME</a></li>
+        <li><a href="../HTML/blogs.html">BLOGS</a></li>
+        <li class="active"><a href="../HTML/recipes.html">RECIPES</a></li>
+        <li><a href="../HTML/reviews.html">REVIEWS</a></li>
+        <li><a href="../HTML/about.html">ABOUT US</a></li>
+      </ul>
+      <hr class="hr1" />
+    </header>
+
+    <div class="detailed-review-container">
+      <div class="leftcolumn">
+        <img
+          src="../Images/mashed-potatoes.jpg"
+          alt="Mashed Potatoes Image"
+          class="detailed-image" />
+      </div>
+      <div class="rightcolumn">
+        <h2>Mashed Potatoes</h2>
+        <p class="cuisine">Cuisine: Western cuisine</p>
+        <p class="description">
+          Mashed potato or mashed potatoes , colloquially known as mash is a
+          dish made by mashing boiled or steamed potatoes, usually with added
+          milk, butter, salt and pepper. It is generally served as a side dish
+          to meat or vegetables. Roughly mashed potatoes are sometimes called
+          smashed potatoes.
+        </p>
+        <h3 class="ingredients">Ingredients</h3>
+        <ul class="ingredients-list">
+          <li>5 lb. russet or Yukon Gold potatoes</li>
+          <li>3/4 c. butter, plus more for topping</li>
+          <li>1 (8-oz.) package cream cheese, softened</li>
+          <li>1/2 to 3/4 cup half-and-half</li>
+          <li>1/2 to 1 tsp. Seasoned Salt</li>
+          <li>1/2 to 1 tsp. black pepper</li>
+        </ul>
+        <h3 class="instructions">Instructions:</h3>
+        <p>
+          Boil and mash the potatoes to perfection in this simple and comforting
+          mashed potato recipe. Begin by peeling and cutting the potatoes into
+          uniform pieces, cooking them until a fork effortlessly slides through.
+          Drain the potatoes, return them to the pot, and mash over low heat,
+          allowing steam to escape.
+        </p>
+        <br />
+        <p>
+          Incorporate butter, cream cheese, half-and-half, Seasoned Salt, and
+          black pepper, stirring to create a creamy blend. Transfer the mashed
+          goodness to a baking dish, top with butter, and bake at 350ºF until
+          the butter melts, resulting in irresistibly warm and flavorful mashed
+          potatoes.Indulge in the rich, creamy goodness of these mashed
+          potatoes, a perfect side dish that melts in your mouth with each
+          delightful bite.You can freeze mashed potatoes in single or group
+          servings for up to one month. Thaw them in the fridge overnight or
+          reheat them from-frozen in the slow cooker, on the stove, or in the
+          oven.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>
